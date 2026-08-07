@@ -16,7 +16,12 @@ mark. The mark's teal→ocean→navy gradient is the heart of the brand.
 | Primary logo (SVG) | `public/brand/nexus-medxperts-logo.svg` | Print, scalable |
 | Primary logo (PNG) | `public/brand/nexus-medxperts-logo.png` | Web header, light backgrounds |
 | Small PNG | `public/brand/nexus-medxperts-logo-sm.png` | Small / retina fallback |
-| CSS "N" mark | `src/components/Mark.tsx` | Dark surfaces, accents, favicon |
+| CSS "N" mark | `src/components/Mark.tsx` | Dark surfaces, accents |
+| Favicon set | `src/app/favicon.ico`, `icon.png`, `apple-icon.png` | Browser tab, iOS home screen |
+| Social share image | `src/app/opengraph-image.png`, `twitter-image.png` | Link previews (1200×630) |
+
+The favicon and share images are generated from the logo. Regenerate the share
+image after a brand change with `python3 scripts/generate-og.py`.
 
 **Clear space:** keep at least the height of the "N" mark clear on all sides.
 **Minimum size:** 120px wide (web) / 25mm (print).

@@ -2,7 +2,7 @@
 
 Brand and visual identity for **nexusmedxperts.ca**. Colours are derived directly
 from the logo (`Med Xperts Logo/`) and implemented as design tokens in
-`web/src/app/globals.css`.
+`src/app/globals.css`.
 
 ---
 
@@ -13,10 +13,10 @@ mark. The mark's teal→ocean→navy gradient is the heart of the brand.
 
 | Asset | File | Use |
 | :--- | :--- | :--- |
-| Primary logo (SVG) | `web/public/brand/nexus-medxperts-logo.svg` | Print, scalable |
-| Primary logo (PNG) | `web/public/brand/nexus-medxperts-logo.png` | Web header, light backgrounds |
-| Small PNG | `web/public/brand/nexus-medxperts-logo-sm.png` | Small / retina fallback |
-| CSS "N" mark | `web/src/components/Mark.tsx` | Dark surfaces, accents, favicon |
+| Primary logo (SVG) | `public/brand/nexus-medxperts-logo.svg` | Print, scalable |
+| Primary logo (PNG) | `public/brand/nexus-medxperts-logo.png` | Web header, light backgrounds |
+| Small PNG | `public/brand/nexus-medxperts-logo-sm.png` | Small / retina fallback |
+| CSS "N" mark | `src/components/Mark.tsx` | Dark surfaces, accents, favicon |
 
 **Clear space:** keep at least the height of the "N" mark clear on all sides.
 **Minimum size:** 120px wide (web) / 25mm (print).

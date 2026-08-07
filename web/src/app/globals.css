@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   Nexus MedXperts — Brand tokens (derived from the logo)
+   Navy  #002850  ·  Teal #16B0B8  ·  Ocean #0090B8
+   ========================================================================= */
+:root {
+  --background: #ffffff;
+  --foreground: #0b1f36;
+
+  --navy-900: #001a35;
+  --navy-800: #002850;
+  --navy-700: #073a68;
+  --navy-600: #0e4d84;
+
+  --ocean-600: #007aad;
+  --ocean-500: #0090b8;
+
+  --teal-600: #10a0a8;
+  --teal-500: #16b0b8;
+  --teal-400: #3ec6cc;
+
+  --ink: #0b1f36;
+  --muted: #5a6b7e;
+  --surface: #f4f8fb;
+  --surface-2: #eaf2f7;
+  --border: #dde7ef;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-ocean-600: var(--ocean-600);
+  --color-ocean-500: var(--ocean-500);
+  --color-teal-600: var(--teal-600);
+  --color-teal-500: var(--teal-500);
+  --color-teal-400: var(--teal-400);
+
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+
+  --radius-xl2: 1.25rem;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Brand gradient used on the icon ribbon + accents */
+.brand-gradient {
+  background-image: linear-gradient(120deg, var(--teal-500) 0%, var(--ocean-500) 45%, var(--navy-700) 100%);
+}
+.brand-text-gradient {
+  background-image: linear-gradient(100deg, var(--teal-500) 0%, var(--ocean-500) 55%, var(--navy-600) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section {
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up { animation: none; }
+  html { scroll-behavior: auto; }
+}

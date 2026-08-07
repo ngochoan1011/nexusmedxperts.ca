@@ -34,10 +34,10 @@ export function Header() {
           <Image
             src="/brand/nexus-medxperts-logo.png"
             alt="Nexus MedXperts"
-            width={196}
-            height={60}
+            width={1400}
+            height={390}
             priority
-            className="h-9 w-auto sm:h-10"
+            className="h-10 w-auto sm:h-12"
           />
         </a>
 

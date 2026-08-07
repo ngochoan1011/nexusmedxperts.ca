@@ -112,9 +112,9 @@ draw = ImageDraw.Draw(img)
 M = 76  # left margin
 
 # ---------- logo ----------
-logo = Image.open(f"{ROOT}/public/brand/nexus-medxperts-logo.png").convert("RGBA")
-# tight crop of the full lockup (icon + wordmark), from measured bounds
-logo = logo.crop((615, 1409, 5470, 2761))
+logo = Image.open(
+    os.path.join(ROOT, "public", "brand", "nexus-medxperts-logo.png")
+).convert("RGBA")  # already tightly cropped to the lockup
 lw = 430
 logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
 img.alpha_composite(logo, (M, 74))
